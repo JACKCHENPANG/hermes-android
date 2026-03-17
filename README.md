@@ -22,6 +22,17 @@ This repo contains **two components**:
 
 > **Note:** The Python code exists here for standalone development and testing (`pip install -e .`, `pytest`). The production copy is in the hermes-agent repo. The Android app does not use or depend on the Python files.
 
+## Install as hermes-agent plugin (v0.3.0+)
+
+```bash
+# Copy the plugin into hermes's plugin directory
+mkdir -p ~/.hermes/plugins
+cp -r hermes-android-plugin ~/.hermes/plugins/hermes-android
+
+# Restart hermes — run /plugins to verify
+# Should show: ✓ hermes-android v0.2.0 (14 tools)
+```
+
 ## Quick Start
 
 ### 1. Install the bridge app on your phone
